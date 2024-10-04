@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { TaskList } from '~/components/TaskList/task-list'; // Importa tu componente aquí
 
 import Counter from "../components/starter/counter/counter";
 import Hero from "../components/starter/hero/hero";
@@ -11,6 +12,11 @@ export default component$(() => {
     <>
       <Hero />
       <Starter />
+
+          <div>
+      <h1>Bienvenido a la aplicación de Lista de Tareas!</h1>
+      <TaskList /> {/* Inserta el componente en la página principal */}
+    </div>
 
       <div role="presentation" class="ellipsis"></div>
       <div role="presentation" class="ellipsis ellipsis-purple"></div>
